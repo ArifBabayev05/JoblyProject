@@ -22,13 +22,13 @@ export const Footer = () => {
 
                     <nav className='nav'>
                         <ul>
-                            <a href='/#' alt='footer'>Haqqımızda</a>
-                            <a href='/#' alt='footer'>İş Elanları</a>
+                            <a href='/about' alt='footer'>Haqqımızda</a>
+                            <a href='/job' alt='footer'>İş Elanları</a>
 
                         </ul>
                         <ul>
-                            <a href='/#' alt='footer'>Profil</a>
-                            <a href='/about' alt='footer'>Əlaqə</a>
+                            <a href='/profile' alt='footer'>Profil</a>
+                            <a href='/contact' alt='footer'>Əlaqə</a>
 
                         </ul>
                     </nav>

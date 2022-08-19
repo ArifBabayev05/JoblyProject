@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Job from "./Pages/Jobs";
+import JobList from './Pages/JobList'
 import Header from './Layouts/Header/index'
 
 import {Footer} from './Layouts/Footer/index'
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='about' element={<About/>}/>
           <Route path='job/:id' element={<Job/>}/>
+          <Route path='job' element={<JobList/>}/>
 
           
 

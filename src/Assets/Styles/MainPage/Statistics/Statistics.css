@@ -5,7 +5,7 @@
 .col .card .card-body {
   margin: 0 !important;
   padding: 24px 48px !important;
-  background-color: var(--card_bg);
+  background-color: rgba(242, 244, 250, 0.4392156863);
   border-radius: 16px;
 }
 .col .card .card-body .card-title {

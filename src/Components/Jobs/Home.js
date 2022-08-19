@@ -1,12 +1,15 @@
 import React, { useState , useEffect } from 'react'
 import axios from 'axios'
-import '../../Assets/Styles/Job/Job.css'
+// import '../../Assets/Styles/Job/Job.css'
 import { useParams } from 'react-router-dom'
 import Loader from './Loader'
+import '../../Assets/Styles/Job/Home.css'
 
+
+//Job Details
 function Home() {
   const {id} = useParams()
-  const url = `https://dummyjson.com/products/${id}`
+  const url = `http://localhost:3000/users/${id}`
   const [product, setProduct] = useState({
     loading: false,
     data: null,
@@ -51,20 +54,59 @@ function Home() {
   
   if(product.data){
    content =
-    <div>
-      <h1>{product.data.title}</h1>
-
-      <div>
-        <img src={product.data.images[0]}/>
+    <div className='card'>
+      <div className='card-header'>
+        <div className='d-flex'> 
+        <div className='headerImage me-4 mb-3'>
+          <img src= {product.data.companyImage}/>
+        </div>
+          <h1>{product.data.name}</h1>
+        </div>
+      
+      <div className='salaryInfo d-flex'>
+        <p className='salary'>Maaş : {product.data.Salary}</p>
       </div>
+      </div>
+    <div className='apply'>
+      <button className='btn '>Müraciət Et</button>
+    </div>
+
+
+      <div className='card-body'>
+        <div className='top_infos d-flex'>
+          <p className='me-2'>{product.data.companyName}</p>
+          <p>{product.data.City}</p>
+
+        </div>
+
+        <div className='body_infos'>
+          <div className='works'>
+              <h3 className='mb-3 ms-1'>Əsas Vəzifə Öhdəlikləri</h3>
+              <p className='mt-4 ms-4'>{product.data.MainWork}</p>
+          </div>
+          <div className='skills'>
+            <h3 className='mb-4 ms-1'>Lazım Olan Bacarıqlar</h3>
+            <p className='ms-5'>{product.data.Skills}</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    <div  className='d-flex justify-content-end card-footer'>
+     <h6> {product.data.City}</h6>
+      <h6>{product.data.DateTime}</h6>
+    </div>
+
+      
     </div>
 
   }
   
     return (
-      <div>
+      <div className='container'>
         
-        {content}
+        <div>{content}</div>
     </div>
 
     
