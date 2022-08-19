@@ -1,1 +1,31 @@
-/*# sourceMappingURL=Job.css.map */
+.aa .myCard {
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+  align-items: center;
+}
+.aa .myCard img {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  align-items: center;
+  margin-left: 10px;
+}
+.aa .myCard h3 {
+  margin-left: 100px;
+  color: white;
+  text-decoration: none;
+}
+.aa .myCard .deadline {
+  color: black;
+  margin-right: 25px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.79);
+  position: absolute;
+  right: 20px;
+}
+.aa .myCard .deadline p {
+  display: contents;
+}/*# sourceMappingURL=Job.css.map */
