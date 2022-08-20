@@ -5,10 +5,17 @@
   box-sizing: border-box;
 }
 
-img {
+.navbar .container img {
   width: 80px;
 }
-
-p {
+.navbar .container form .search a {
+  text-decoration: none;
   font-weight: 500;
+  color: rgb(38, 38, 38);
+}
+.navbar .container form a {
+  font-weight: 500;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(38, 38, 38);
 }/*# sourceMappingURL=Header.css.map */

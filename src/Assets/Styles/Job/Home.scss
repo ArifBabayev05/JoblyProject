@@ -55,6 +55,9 @@
             border:1.5px solid #F8F8F9 ;
             color: white;
         }
+        :focus{
+            outline:none
+        }
     }
     .card-body{
         .top_infos{

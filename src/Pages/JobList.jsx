@@ -5,7 +5,11 @@ import Home from '../Components/Jobs/Home'
 
 function JobList() {
   return (
-    <div><Jobs/></div>
+
+    
+    <div>
+      <Jobs/></div>
+    
     
   )
 }
