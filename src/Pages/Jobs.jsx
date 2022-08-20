@@ -6,7 +6,9 @@ function Jobs() {
     
   return (
     <div>
+      
         <Home/>
+
 
     </div>
   )

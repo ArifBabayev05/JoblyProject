@@ -58,7 +58,7 @@ function Home() {
       <div className='card-header'>
         <div className='d-flex'> 
         <div className='headerImage me-4 mb-3'>
-          <img src= {product.data.companyImage}/>
+          <img src= {product.data.companyImage} alt='asf'/>
         </div>
           <h1>{product.data.name}</h1>
         </div>
@@ -79,12 +79,12 @@ function Home() {
 
         </div>
 
-        <div className='body_infos'>
-          <div className='works'>
+        <div className='body_infos row'>
+          <div className='works col-lg-6 col-sm-12'>
               <h3 className='mb-3 ms-1'>Əsas Vəzifə Öhdəlikləri</h3>
               <p className='mt-4 ms-4'>{product.data.MainWork}</p>
           </div>
-          <div className='skills'>
+          <div className='skills  col-lg-6 col-sm-12'>
             <h3 className='mb-4 ms-1'>Lazım Olan Bacarıqlar</h3>
             <p className='ms-5'>{product.data.Skills}</p>
           </div>

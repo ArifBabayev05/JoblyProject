@@ -3,6 +3,8 @@ import axios from 'axios'
 import Loader from './Loader'
 import JobCard from './JobCard'
 import '../../Assets/Styles/Job/Job.css'
+import search from '../../Assets/Images/Logo/search.svg'
+
 
 
 //Full Jobs
@@ -54,8 +56,8 @@ function Jobs() {
 
   if(products.data){
     content =
-     products.data.map((product,key)=>
-      <div>
+     products.data.map((product)=>
+      <div key={product.id}>
         <JobCard product={product}/>
       </div>
      )
@@ -68,7 +70,17 @@ function Jobs() {
 
   return (
     <div>
-      <h1 className='container' style={{color:'var(--pink)'}}>Aktiv Vakansiyalar</h1>
+     <div className='d-flex container'>
+     <h1  className='text container '  style={{color:'var(--pink)',fontSize:'65px'}}>Aktiv Vakansiyalar</h1>
+    <form className='searchJob mb-5'>
+      <input  className='searchBar mt-2 p-2'  type='text'></input>
+      <button className='search__submit' type='submit'>
+                  <img src='https://www.citypng.com/public/uploads/small/116400840186bmo0mkghcdq8hn99wmpbh9wrgbytghidisi7e41vegbclccrb6kg9hrk0ebgqrpc5ezz2tjtkvsfsvk7yfbakowxbpvrzsakde3.png'   alt='some value'/>
+                </button>
+
+    </form>
+     </div>
+
       {content}
 
 

@@ -9,13 +9,13 @@ function index() {
   <div class="container container-fluid">
     <img  src={logo} alt=''/>
     <form class="d-flex">
-    <div className='d-flex mx-4'>
+    <div className='d-flex search mx-4'>
     <i class="fa-solid mt-1 me-2 fa-magnifying-glass"></i>
-    <p className='fw-600'>İş Axtarın</p>
+    <a href='/job' className='fw-600'>İş Axtarın</a>
     </div>
 
     <div>
-        <p>Daxil Olun</p>
+        <a href='/login'>Daxil Olun</a>
     </div>
     </form>
   </div>

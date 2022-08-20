@@ -35,7 +35,7 @@ export const Footer = () => {
 
                     <div className='footer__lang'>
                         <div className='social__button'>
-                            <a href='/#'>
+                            <a href='/#' className='me-4'>
                                 
                                 <div className='social'>
                                     <img src={instagram} alt='logo'></img>

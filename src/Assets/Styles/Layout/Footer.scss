@@ -23,7 +23,10 @@ footer {
             a {
                 text-decoration: none;
                 color: inherit;
-
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
                 
             }
 
@@ -83,9 +86,3 @@ footer {
         }
     }
 }
-// footer .footer__container nav ul a:nth-child(2) {
-//     margin: 28px 0;
-// }
-// footer .footer__container nav ul:nth-child(2) {
-//     margin-left: 124px;
-// }
