@@ -3,7 +3,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Job from "./Pages/Jobs";
 import JobList from './Pages/JobList'
-import Header from './Layouts/Header/index'
+import Header from './Layouts/Header/Index'
 
 import {Footer} from './Layouts/Footer/index'
 import {

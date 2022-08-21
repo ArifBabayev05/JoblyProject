@@ -3,7 +3,7 @@ import axios from 'axios'
 import Loader from './Loader'
 import JobCard from './JobCard'
 import '../../Assets/Styles/Job/Job.css'
-import search from '../../Assets/Images/Logo/search.svg'
+// import search from '../../Assets/Images/Logo/search.svg'
 
 
 
@@ -11,6 +11,8 @@ import search from '../../Assets/Images/Logo/search.svg'
 function Jobs() {
   const url = `http://localhost:3000/users`
   const [query, setQuery] = useState("")
+
+  
   const [products, setProducts] = useState({
     loading: false,
     data: null,
@@ -69,21 +71,21 @@ function Jobs() {
     content = 
     products.data.filter(product=>{
       if (query === "") {
-        //if query is empty
         return product;
       } else if (product.name.toLowerCase().includes(query.toLowerCase())) {
-        //returns filtered array
+        
         return product;
       }
       else if (product.companyName.toLowerCase().includes(query.toLowerCase())) {
-        //returns filtered array
+        
         return product;
       }
+      
     }).map((product)=>
     <div key={product.id}>
       <JobCard product={product}/>
     </div>
-   )
+   ).reverse();
    }
 
 

@@ -39,7 +39,7 @@
   line-height: 18px;
 }
 .card .apply {
-  justify-content: end;
+  justify-content: flex-end;
   display: flex;
   top: -20px;
   position: relative;
