@@ -15,7 +15,7 @@ function JobCard(props) {
                     }}
                     className="w-100  myCard d-flex ">
                         {/* <Link to={`/job/${props.product.id}`}> */}
-                        <img src={props.product.companyImage}/>
+                        <img src={props.product.companyImage} alt='aaa'/>
                         <h3>{props.product.name}</h3>
 
                         <div className='deadline mt-2'>

@@ -22,7 +22,7 @@
   color: var(--pink);
 }
 .h2 p {
-  color: var(--gray);
+  color: var(--black);
   font-size: 18px;
   font-weight: 300;
   margin-top: 32px;
@@ -32,7 +32,7 @@
   position: relative;
   width: 80%;
 }
-.h2 .homepage_search input {
+.h2 .homepage_search a input {
   position: relative;
   font-size: inherit;
   width: 100%;
@@ -43,8 +43,10 @@
   background-color: #EDF3FA;
   border: none;
   outline: none;
+  cursor: pointer;
   font-size: 20px;
   font-weight: 300;
+  color: black;
 }
 .h2 .homepage_search .search__submit {
   position: absolute;
@@ -57,7 +59,10 @@
   border: none;
 }
 .h2 .homepage_search .search__submit img {
-  vertical-align: baseline;
   width: 30px;
+  position: absolute;
   margin-top: 5px;
+  justify-content: center;
+  position: relative;
+  right: -9px;
 }/*# sourceMappingURL=Hero.css.map */
