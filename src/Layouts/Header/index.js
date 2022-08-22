@@ -27,6 +27,7 @@ function Index() {
     
     <form class="d-flex">
     <div className='d-flex search mx-4'>
+    
     <i class="fa-solid mt-1 me-2 fa-magnifying-glass"></i>
     <a href='/job' className='fw-600'>İş Axtarın</a>
     </div>
